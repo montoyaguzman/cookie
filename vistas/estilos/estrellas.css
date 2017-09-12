@@ -1,0 +1,36 @@
+ 	#form {
+		width: 250px;
+	 	margin: 0 auto;
+		height: 50px;
+		}
+
+	#form div {
+		text-align: center;
+	}
+
+	#form label {
+		font-size: 40px;
+	}
+
+	input[id="radio1"],input[id="radio2"],input[id="radio3"],input[id="radio4"],input[id="radio5"] {
+		display: none;
+	}
+
+	label {
+		color: black;
+	}
+
+	.clasificacion {	
+	direction: rtl;
+	unicode-bidi: bidi-override;
+	}
+
+	#puntuacion:hover,
+	#puntuacion:hover ~ #puntuacion {
+	color: orange;
+	}
+
+	input[id="radio1"],input[id="radio2"],input[id="radio3"],input[id="radio4"],input[id="radio5"]:checked ~ label {
+		color: orange;
+	}
+

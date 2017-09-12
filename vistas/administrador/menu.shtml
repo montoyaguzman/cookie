@@ -1,0 +1,29 @@
+  <html>
+	<body>
+		<nav>
+			<div class="nav-wrapper blue darken-2">
+				<a href="#!" class="brand-logo">Cookie Chef</a>
+				<a href="#!"class="button-collapse" data-activates="menu">
+				<i class="mdi-navigation-menu"></i>
+				</a>
+				<ul class="hide-on-med-and-down right">
+					<li><a href="recetas/0_agendaRecetas.php">Recetas</a></li>
+					<li><a href="videorecetas/0_agendaVideorecetas.php">Videorecetas</a></li>
+					<li><a href="tipsCocina/0_agendaTipsCocina.php">Tips de cocina</a></li>
+					<li><a href="negocios/0_agendaNegocios.php">Negocios</a></li>
+					<li><a href="#!">Socios</a></li>
+				</ul>
+				<ul class="side-nav" id="menu">
+					<li><a href="recetas/0_agendaRecetas.php">Recetas</a></li>
+					<li><a href="videorecetas/0_agendaVideorecetas.php">Videorecetas</a></li>
+					<li><a href="tipsCocina/0_agendaTipsCocina.php">Tips de cocina</a></li>
+					<li><a href="negocios/0_agendaNegocios.php">Negocios</a></li>
+					<li><a href="#!">Socios</a></li>
+				</ul>
+			</div>
+		</nav>
+  	</body>
+ </html>	
+
+        
+	

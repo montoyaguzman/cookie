@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Alta de Videorecetas</title>
+		<script src="../../estilos/materialize/js/jquery-2.2.1.min.js"></script>
+		<script src="../../estilos/materialize/js/materialize.min.js"></script>
+		<link rel="stylesheet" href="../../estilos/materialize/css/materialize.css" media="screen, projection">
+
+    <!-- JAVASCRIPT -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('select').material_select();
+      })
+  </script>
+  <!-- JAVASCRIPT -->
+</head>	
+
+<!-- INICIO DEL BODY -->
+	<body>
+
+		<div class="row">
+        <div class="col s12">
+          <div class="card-panel teal">
+          	<span class="white-text"><h4><strong>Registro de videorecetas</strong></h4>
+          	</span>
+          </div>
+        </div>
+    </div>
+
+<!-- INICIO DEL FORMULARIO -->
+	    
+      <div class="row">
+    		<form class="col s10 offset-s1" method="post" action="1_altaVideoRecetasAction.php" enctype="multipart/form-data">
+        		
+            <div class="row">
+              <div class="input-field col s6 m5">
+          	     <input id="nombreVideoreceta" name="nombreVideoreceta" type="text" class="validate">
+          			 <label for="nombreVideoreceta" class="activate">Nombre de la videoreceta</label>
+           		</div>
+              <div class="input-field col s6 m5">
+                 <input id="link" name="link" type="text" class="validate">
+                 <label for="link" class="activate">Enlace de la videoreceta</label>
+              </div>
+      			</div>
+
+            <div class="row">
+    	        <div class="input-field col s6">
+              		<textarea id="ingredientes" name="ingredientes" class="materialize-textarea"></textarea>
+              		<label for="ingredientes">Ingredientes</label>
+            	</div>
+            </div>  
+            				
+            <br>
+            <div class="row">
+              <div class="input-field col s4">
+                <input id="tiempoPreparacion" name="tiempoPreparacion" type="text" class="validate">
+                <label for="tiempoPreparacion" class="activate">Tiempo de preparación</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="kilocalorias" name="kilocalorias" type="text" class="validate">
+                <label for="kilocalorias" class="activate">Kilocalorias</label>
+              </div>
+              <div class="input-field col s3">
+                <select id="tipoAlimento" name="tipoAlimento">
+                  <option value="Arroces">Arroces</option>
+                  <option value="Bebidas">Bebidas</option>
+                  <option value="Carnes">Carnes</option>
+                  <option value="Ensaladas">Ensaladas</option>
+                  <option value="Helados">Helados</option>
+                  <option value="Huevos">Huevos</option>
+                  <option value="Jugos y licuados">Jugos y licuados</option>
+                  <option value="Legumbres y potajes">Legumbres y potajes</option>
+                  <option value="Pastas y pizzas">Pastas y pizzas</option>
+                  <option value="Pescados y mariscos">Pescados y mariscos</option>
+                  <option value="Sopas">Sopas</option>
+                  <option value="Pures y cremas">Pures y cremas</option>
+                  <option value="Postres y dulces">Postres y dulces</option>
+                </select>
+                  <label>Tipo de alimento</label>
+              </div>
+            </div>
+
+            <br>
+            <div class="row">
+              <div class="input-field col s4">
+                <select id="tipoPlatillo" name="tipoPlatillo">
+                  <option value="Botana">Botanas</option>
+                  <option value="Entrada">Entrada</option>
+                  <option value="Plato fuerte">Plato fuerte</option>
+                  <option value="Guarnición">Guarnición</option>
+                  <option value="Postre">Postre</option>
+                </select>
+                  <label>Tipo de platillo</label>
+                </div>
+                <div class="input-field col s4">
+                  <select id="comida" name="comida">
+                    <option value="Desayuno">Desayuno</option>
+                    <option value="Almuerzo">Almuerzo</option>
+                    <option value="Comida">Comida</option>
+                    <option value="Merienda">Merienda</option>
+                    <option value="Cena">Cena</option>
+                  </select>  
+                    <label>Comida</label>
+                </div>
+                <div class="input-field col s4">
+                  <select id="ocasion" name="ocasion">
+                    <option value="Comida diaria">Comida diaria</option>
+                    <option value="Fin de semana">Fin de semana</option>
+                    <option value="Fiesta">Fiesta</option>
+                    <option value="Picnic">Picnic</option>
+                    <option value="Especial">Especial</option>
+                  </select>
+                    <label>Ocasión</label>
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+              <div class="input-field col s4">
+                  <input id="porciones" name="porciones" type="text" class="validate">
+                  <label for="porciones" class="activate">Porciones</label>
+              </div>
+              <div class="input-field col s4">
+                <select id="dificultad" name="dificultad">
+                  <option value="Sencilla">Sencilla</option>
+                  <option value="Media">Media</option>
+                  <option value="Dificil">Dificil</option>
+                </select>
+                  <label>Dificultad</label>
+              </div>
+            </div>
+
+            <br>
+            <div class="row">
+              <div class="input-field col s6">
+                <textarea id="informacionNutrimental" name="informacionNutrimental" class="materialize-textarea"></textarea>
+                <label for="informacionNutrimental">Información Nutrimental</label>
+              </div>
+            </div>  
+
+	        <div>
+            <button class="waves-effect waves-light btn">Guardar</button>
+	        </div>
+
+
+			</form>
+		</div>	
+  	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
